@@ -1,0 +1,44 @@
+#   Программа с помощью ответов пользователя определяет тип телосложения
+#  Developer: Bricheev 20704.2
+# Вводятся заданный диапозон значений:
+# для мужчин: рост от 180 и выше либо от 180 и ниже
+# для мужчин: вес от 90 и выше, либо от 70 до 90, либо от 70 и ниже
+# для женщин: рост от 170 и выше либо от 170 и ниже
+# для женщин: вес от 70 и выше, либо от 50 до 70, лиюо от 50 и ниже
+height = int(input('Укажите ваш рост в см: '))
+weight = int(input('Укажите ваш вес в кг: '))
+gender = input('Укажите ваш пол: ')
+if gender =='мужской':
+        if height>=180  and weight>=90 :
+                print('Эндоморф')
+        elif height>=180 and weight<=90 and weight>=70:
+                print('Мезоморф')
+        elif height > 180 and weight < 70:
+                print('Эктоморф')
+        else:
+                print("-")
+        if height <= 180  and weight >= 90 :
+                print('Эндоморф')
+        elif height <= 180 and weight <= 80 and weight >= 70:
+                print('Мезоморф')
+        elif height <= 180 and weight <= 70:
+                print('Эктоморф')
+        else:
+                print("-")
+elif gender =='женский':
+        if height >= 170 and weight >= 70:
+                print('Эндоморф')
+        elif height >= 170 and weight <= 70 and weight >= 50:
+                print('Мезоморф')
+        elif height >= 170 and weight <= 50:
+                print('Эктоморф')
+        else:
+                print("-")
+        if height <= 170 and weight >= 70:
+                print('Эндоморф')
+        elif height <= 170 and weight <= 60 and weight >= 50:
+                print('Мезоморф')
+        elif height <= 170 and weight <= 50:
+                print('Эктоморф')
+        else:
+                print("-")
